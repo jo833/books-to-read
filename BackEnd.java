@@ -155,7 +155,7 @@ public class BackEnd implements BackEndInterface {
 		}
 
 		else {
-			return root.data.getPriceOfBook() * 1.30;
+			return root.data.getPriceOfBook();
 		}
 	}
 
