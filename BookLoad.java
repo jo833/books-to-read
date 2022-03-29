@@ -69,7 +69,7 @@ public class BookLoad implements BookLoadInterface {
 			// extracts just the numerical part of the year(some had months)
 			
 			BookData temp = new BookData((Integer.parseInt(line.get(positionIndex))), line.get(titleIndex), line.get(authorIndex), line.get(imprintIndex), Integer.parseInt(line.get(volumeIndex)),
-					Double.parseDouble(line.get(ASPIndex)), line.get(publishIndex), line.get(genreIndex));
+					Double.parseDouble(line.get(ASPIndex))*1.3, line.get(publishIndex), line.get(genreIndex));
 			out.add(temp);
 		}
 		return out;
