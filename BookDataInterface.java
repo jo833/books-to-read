@@ -4,7 +4,7 @@ public interface BookDataInterface {
 	    public String getTitle();
 	    public String getGenre();
 	    public String getAuthor();
-	    public int getAmountSold();
+	    public String getAmountSold();
 	    public double getPriceOfBook();
 	    public String getPublisher();
 	    public String getYearPublished();

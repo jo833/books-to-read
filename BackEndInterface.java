@@ -8,7 +8,7 @@ public interface BackEndInterface {
 
 	String findTitles(int bookRank);
 	
-	int findAmountSold(int bookRank);
+	String findAmountSold(int bookRank);
 
 	double findPriceOfBook(int bookRank);
 
@@ -23,5 +23,7 @@ public interface BackEndInterface {
 	boolean isEmpty();
 	
 	public boolean insert(BookDataInterface book);
+
+	String findPublisher(int bookRank);
 	
 }

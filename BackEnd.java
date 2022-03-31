@@ -85,7 +85,20 @@ public class BackEnd implements BackEndInterface {
 
 		return current;
 	}
+	@Override
+	public String findPublisher(int bookRank) {
 
+		lookupHelper(bookRank, root);
+
+		if (size() == 0) {
+			throw new NoSuchElementException("No Book Found");
+
+		}
+
+		else {
+			return root.data.getPublisher();
+		}
+	}
 	@Override
 	public String findGenre(int bookRank) {
 		lookupHelper(bookRank, root);
@@ -131,7 +144,7 @@ public class BackEnd implements BackEndInterface {
 	}
 
 	@Override
-	public int findAmountSold(int bookRank) {
+	public String findAmountSold(int bookRank) {
 		lookupHelper(bookRank, root);
 
 		if (size() == 0) {
@@ -305,3 +318,4 @@ public class BackEnd implements BackEndInterface {
 	}
 
 }
+

@@ -1,4 +1,3 @@
-
 public class BookData implements BookDataInterface {
 
 	private final int rank;
@@ -6,11 +5,11 @@ public class BookData implements BookDataInterface {
 	private final String title;
 	private final String author;
 	private final double ASPIndex;
-	private final int volume;
+	private final String volume;
 	private final String publishYear;
 	private final String publisherImprint;
 
-	public BookData(int rank, String title, String author, String publisherImprint, int volume, double ASPIndex,
+	public BookData(int rank, String title, String author, String publisherImprint, String volume, double ASPIndex,
 			String publishYear, String genre) {
 		this.rank = rank;
 		this.title = title;
@@ -43,7 +42,7 @@ public class BookData implements BookDataInterface {
 		return author;
 	}
 
-	public int getAmountSold() {
+	public String getAmountSold() {
 
 		return volume;
 	}
@@ -64,3 +63,4 @@ public class BookData implements BookDataInterface {
 	}
 
 }
+
